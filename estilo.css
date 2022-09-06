@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto Mono',monospace;
+    min-height: 400px;
+    background-image: url('https://play-lh.googleusercontent.com/Vn9sIUPcCVihrxMATWR_MjCIFuc5quCw-R3UN8Rmoze7rgaBhHdmF2RqjX3x28EJoQ');
+    background-color: #A5CDF6;
+    background-size: 80vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+.temp_container {
+    display: flex;
+    justify-content: center;
+}
+
+.temp_subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.temp_input {
+    width: 65px;
+}
+
+#botao_calcular {
+    margin-top: 10px;
+    height: 30px;
+    width: 65 px;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0);
+    transition: all 0.2s;
+}
+
+#botao_calcular:hover {
+    transform: scale(1.2);
+    background-color: rgb(214, 0, 0);
+    cursor: pointer;
+}
+
+#botao_calcular:active{
+    transition: all 0.1s;
+    transform: scale(1);
+    background-color: #008000;
+    border-color: rgba(255, 255, 255, 0);
+}

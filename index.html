@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title> Imersão Dev Alura - Aula 01</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">
+      Calculadora de temperatura</h1>
+      
+      <p class="page-subtitle">
+      Converta as escalas de temperatura aqui!
+      </p>
+
+        <div class="temp_container">
+            <div class="temp_subcontainer">
+                <label for="celsius" >Temperatura em Celsius:</label>
+                <input type="number" name="celsius" id="celsius" value="0" class="temp_input">
+
+                <label for="kelvin">Temperatura em Kelvin:</label>
+                <input type="number" name="kelvin" id="kelvin" value="0" class="temp_input" disabled>
+
+                <label for="farhenheit">Temperatura em Farhenheit:</label>
+                <input type="number" name="farh" id="farh" value="0" class="temp_input" disabled>
+
+                <input type="button" value="Calcular" id="botao_calcular" onclick="calcularTemp()">
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+  </body>
+</html>
