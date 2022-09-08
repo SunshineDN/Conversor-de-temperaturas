@@ -1,38 +1,52 @@
-<html>
-  <head>
-    <title> Imersão Dev Alura - Aula 01</title>
-    <link rel="stylesheet" href="estilo.css">
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="page-title">
-      Calculadora de temperatura</h1>
-      
-      <p class="page-subtitle">
-      Converta as escalas de temperatura aqui!
-      </p>
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de temperaturas</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <section class="container">
+    <header class="container-header">
+      <div class="subcontainer-header">
+        <h1 class="header-title">
+          Conversor de temperaturas
+        </h1>
+      </div>
+    </header>
 
-        <div class="temp_container">
-            <div class="temp_subcontainer">
-                <label for="celsius" >Temperatura em Celsius:</label>
-                <input type="number" name="celsius" id="celsius" value="0" class="temp_input">
+    <div class="container-box">
+      <div class="subcontainer-box">
+        <p class="box-text">
+          Saiba aqui as temperaturas em mais escalas!
+        </p>
 
-                <label for="kelvin">Temperatura em Kelvin:</label>
-                <input type="number" name="kelvin" id="kelvin" value="0" class="temp_input" disabled>
-
-                <label for="farhenheit">Temperatura em Farhenheit:</label>
-                <input type="number" name="farh" id="farh" value="0" class="temp_input" disabled>
-
-                <input type="button" value="Calcular" id="botao_calcular" onclick="calcularTemp()">
+        <div class="container-radio">
+          <p>Selecione a escala que você irá utilizar:</p>
+          <div class="radios">
+            <div class="sub-radios" >
+              <label for="radioTemp" class="celTxt">Celsius <input type="radio" name="radioTemp" id="celsius" onclick="Verificar()"></label>
+              
+              <label for="radioTemp" class="fahTxt">Fahrenheit <input type="radio" name="radioTemp" id="fahrenheit" onclick="Verificar()"></label>
+              
+              <label for="radioTemp" class="kelTxt">Kelvin <input type="radio" name="radioTemp" id="kelvin" onclick="Verificar()"></label>
             </div>
+          </div>
+
+          <div class="container-input">
+            <label for="input-temp">Digite o valor:</label>
+            <input type="number" name="input-temp" id="input-temp" placeholder="0" disabled>
+          </div>
         </div>
+
+      </div>
+
+      <input type="submit" value="Calcular!" class="calcBtn" onclick="CalcularTemp()" disabled>
+
     </div>
-    
-    
-    
-    <a href="https://alura.com.br/" target="_blank">
-    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    </a>
-  </body>
+  </section>
+</body>
 </html>
