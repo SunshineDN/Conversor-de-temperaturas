@@ -35,6 +35,7 @@ h1, p, label, .calcBtn, .resultado {
 
 h1 {
   font-size: 24pt;
+  text-align: center;
 }
 
 .container-box {
